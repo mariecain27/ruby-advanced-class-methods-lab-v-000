@@ -59,9 +59,7 @@ class Song
     new_song = self.new
     new_song.artist_name = file_name.split(/( - )|(.mp3)/)[0]
     new_song.name = file_name.split(/( - )|(.mp3)/)[2]
-    new_song
-    
-    
+    new_song.save
   end
   
   def self.destroy_all
